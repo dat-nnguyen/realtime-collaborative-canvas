@@ -1,0 +1,31 @@
+{
+  "name": "realtime-collaborative-canvas",
+  "version": "1.0.0",
+  "description": "A high-performance, distributed, real-time collaborative canvas sync engine modeled after Figma and Google Docs. Built with **Node.js (ESM)**, **Fastify**, **WebSockets**, **Yjs (CRDT)**, **Redis Pub/Sub**, and **PostgreSQL**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dat-nnguyen/realtime-collaborative-canvas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dat-nnguyen/realtime-collaborative-canvas/issues"
+  },
+  "homepage": "https://github.com/dat-nnguyen/realtime-collaborative-canvas#readme",
+  "dependencies": {
+    "@fastify/websocket": "^11.3.1",
+    "dotenv": "^18.0.4",
+    "fastify": "^5.12.5",
+    "jsonwebtoken": "^9.0.3",
+    "postgres": "^3.4.9",
+    "redis": "^6.2.1",
+    "y-protocols": "^1.0.7",
+    "yjs": "^13.6.33"
+  }
+}

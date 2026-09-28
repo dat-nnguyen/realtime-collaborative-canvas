@@ -36,7 +36,7 @@ export function createUpdateMessage(update) {
  *
  * @param {Uint8Array | Buffer} messageBytes - Raw binary payload received over WebSocket.
  * @param {import('yjs').Doc} doc - The room's shared Y.Doc to sync against.
- * @param {any} origin - The originating client socket (passed to Y.Doc to prevent echo loops).
+ * @param {any} origin - Identifier of the update sender (passed to Y.Doc to prevent echo loops).
  * @returns {{ reply: Uint8Array | null, messageType: number }} Result object containing optional reply bytes.
  */
 export function handleBinaryMessage(messageBytes, doc, origin) {
